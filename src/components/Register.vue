@@ -4,7 +4,7 @@
     <h2 align="center" style="color: coral">用户注册</h2>
     <div class="register_box">
      <el-form ref="registerRef" :model="registerForm" :rules="registerRules" label-width="100px" class="register_form">
-       <br><br><br><br><br><br>
+       <br><br><br>
         <el-form-item label="用户名：" prop="userId">
           <el-input v-model="registerForm.userId" style="width: 200px"></el-input>
         </el-form-item>
@@ -27,6 +27,12 @@
          <el-select v-model="registerForm.sex" placeholder="请选择性别">
            <el-option label="男" value="1"></el-option>
            <el-option label="女" value="2"></el-option>
+         </el-select>
+       </el-form-item>
+       <el-form-item label="用户类型：" prop="userType">
+         <el-select v-model="registerForm.userType" placeholder="请选择用户类型">
+           <el-option label="管理人员" value="1"></el-option>
+           <el-option label="员工" value="2"></el-option>
          </el-select>
        </el-form-item>
        <el-form-item class="btns">
@@ -59,6 +65,7 @@
           sex:"",
           email:"",
           name:"",
+          userType:"",
         },
         // 表单验证规则对象
         registerRules:{
@@ -83,6 +90,9 @@
           ],
           sex: [
             { required: true, message: '请选择性别', trigger: 'blur' },
+          ],
+          userType: [
+            { required: true, message: '请选择用户类型', trigger: 'blur' },
           ],
         }
       }
