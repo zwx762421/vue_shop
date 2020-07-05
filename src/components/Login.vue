@@ -66,8 +66,9 @@ export default {
         }
         this.$message.success("登陆成功！");
         console.log(res.data.data.token);// 打印token
-        // 把token保存到sessionStorage中
+        // 把token和userId保存到sessionStorage中
         window.sessionStorage.setItem('token',res.data.data.token);
+        window.sessionStorage.setItem('userId',res.data.data.userId);
         this.$router.push('/Home');
       });
     },
