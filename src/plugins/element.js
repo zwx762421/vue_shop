@@ -16,6 +16,7 @@ import { Button,
   Submenu,
   MenuItemGroup,
   MenuItem,
+  Popover,
 } from 'element-ui'
 
 Vue.use(Button)// 按钮
@@ -33,5 +34,6 @@ Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItemGroup)
 Vue.use(MenuItem)
+Vue.use(Popover)
 Vue.prototype.$message = Message// 全局挂载 弹出框
 

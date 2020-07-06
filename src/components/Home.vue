@@ -7,7 +7,17 @@
         <img src="../assets/header.png" alt="">
         <span>电商后台管理系统</span>
       </div>
-      <el-button type="info" @click="logout"> 退出</el-button>
+      <div>
+        <el-popover
+          placement="bottom"
+          title="标题"
+          width="200"
+          trigger="click"
+          content="这是一段内容,这是一段内容,这是一段内容,这是一段内容。">
+          <el-button slot="reference" type="warning" @click="getbyId">个人信息</el-button>
+        </el-popover>
+        <el-button type="info" @click="logout"> 退出</el-button>
+      </div>
     </el-header>
     <!-- 页面主体区域-->
     <el-container>
@@ -56,6 +66,9 @@
       logout(){
         window.sessionStorage.clear();
         this.$router.push("/login")
+      },
+      getbyId(){
+
       }
     }
   }
@@ -65,9 +78,9 @@
 .el-header{
   background-color: #00a1f1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;// 元素之间的距离相等
   padding-left: 0;
-  align-items: center;// 按钮居中
+  align-items: center;// 按钮在整个区域居中
   color: white;
   font-size: 20px;
   >div{
