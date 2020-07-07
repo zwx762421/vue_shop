@@ -31,8 +31,9 @@
        </el-form-item>
        <el-form-item label="用户类型：" prop="userType">
          <el-select v-model="registerForm.userType" placeholder="请选择用户类型">
-           <el-option label="管理人员" value="1"></el-option>
-           <el-option label="员工" value="2"></el-option>
+           <el-option label="一级领导" value="1"></el-option>
+           <el-option label="部门领导" value="2"></el-option>
+           <el-option label="员工" value="3"></el-option>
          </el-select>
        </el-form-item>
        <el-form-item class="btns">
