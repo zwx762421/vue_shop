@@ -1,24 +1,10 @@
-# vue_shop
+vue前端系统
 
-## Project setup
-```
-npm install
-```
+也是新手在学习过程中
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+电商后台管理系统，axios、element等依赖
 
-### Compiles and minifies for production
-```
-npm run build
-```
+也有后端同步框架
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+想要交流可以联系我：qq：772768619
+微信：772768619
